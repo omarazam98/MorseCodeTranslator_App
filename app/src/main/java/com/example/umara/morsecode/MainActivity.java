@@ -17,7 +17,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final int REQUEST_CODE = 23; // Code for camera use request call
+    private static final int REQUEST_CODE = 23; // Code for camera use request call
 
     // Variables defined for delaying the output of morseCode depending on the morse letter
     private static int singleTimeUnit = 240;
@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
     private Button toMorsebtn;  // Alphabet to Morse
     private Button toAlphabtn;  // Morse to Alphabet
 
-    public static StringBuilder builder; // Holds the incremented converted string used to print to display
-    public static boolean state; // Current state of flash On/Off
-    public static String mVal;   // Holds current morseValue so that program can delay/flash accordingly
+    private static StringBuilder builder; // Holds the incremented converted string used to print to display
+    private static boolean state; // Current state of flash On/Off
+    private static String mVal;   // Holds current morseValue so that program can delay/flash accordingly
 
     Flashlight Flash;
     Thread newThread;
@@ -182,9 +182,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /**
-     * A native method that is implemented by the 'native-lib' native library,
-     * which is packaged with this application.
-     */
-    public native String stringFromJNI();
+//    /**
+//     * A native method that is implemented by the 'native-lib' native library,
+//     * which is packaged with this application.
+//     */
+//    public native String stringFromJNI();
 }

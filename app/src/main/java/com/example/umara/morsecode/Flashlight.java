@@ -4,12 +4,12 @@ import android.content.Context;
 import android.hardware.Camera;
 import android.media.MediaPlayer;
 import android.util.Log;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 public class Flashlight {
-        public static Camera cam;
-        public static Camera.Parameters p;
-        public static MediaPlayer morseNoise;
+        private static Camera cam;
+        private static Camera.Parameters p;
+        private static MediaPlayer morseNoise;
 
     public void flashSetup(Context ctx){
         cam = android.hardware.Camera.open(); // initialize camera and its parameter
@@ -36,7 +36,6 @@ public class Flashlight {
                 Log.e("Err", "Failed to toggle flash" + e.getMessage());
 
             }
-
         }
     }
 

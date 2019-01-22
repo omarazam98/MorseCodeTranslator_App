@@ -4,7 +4,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
 import java.util.HashMap;
-public class MorseCode {
+ public class MorseCode {
 
 
     static String[] ALPHA = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
